@@ -1,0 +1,44 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(217, 217, 217);
+    margin: 0;
+    padding: 0;
+}
+
+.instructions {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.1);
+}
+
+h2, p {
+    text-align: center;
+}
+
+.instructions h2 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.instructions p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.instructions button {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #49a9e5;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 15px 60px;
+    cursor: pointer;
+}

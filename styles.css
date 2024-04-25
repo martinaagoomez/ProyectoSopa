@@ -1,0 +1,161 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(217, 217, 217);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #75bbe6;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p{
+    color: #3d3d3d;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.onboarding {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.onboarding button{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(221, 220, 222);
+    border: 1px solid black; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+/* a continuacion, los estilos de la pagina del juego */
+.container2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.words-tofind {
+    align-self: flex-start;
+}
+
+.instructions button {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(221, 220, 222);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+
+.word-grid {
+    display: grid;
+    grid-template-columns: repeat(30px); 
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.word-grid div {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(221, 220, 222);
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.word-grid {
+    display: block;
+    margin: 20px auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.word-row {
+    display: table-row;
+}
+
+.word-cell {
+    display: table-cell;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 18px;
+}
+
+.words-tofind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; 
+    margin-left: 50px;
+  }
+
+#tofindWordsList {
+    padding: 0;
+    list-style: none;
+  }
+
+.word-cell.selected {
+    background-color: yellow; 
+    color: black; 
+}
+
+.found {
+    text-decoration: line-through;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px; 
+    height: 50px; 
+    margin-top: 20px;
+    background-color: rgb(221, 220, 222);
+    border: 1px solid black; 
+  }
+
+  @media (max-width: 765px){
+    .container {
+        padding: 10px;
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .timer {
+        width: 100px;
+        display: inline-block; 
+        margin-left: 10px;
+    }
+    .words-tofind {
+        display: inline-block;
+        align-items: center;
+    }
+    .word-grid {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+  }
